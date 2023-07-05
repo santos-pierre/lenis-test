@@ -1,0 +1,64 @@
+/** VAR **/
+:root {
+	--column-template: 12;
+}
+
+/** LENIS **/
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+
+/** My style **/
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 18vw;
+}
+
+.vertical-sticky {
+	display: flex;
+	/* grid-template-columns: repeat(var(--column-template),minmax(0,1fr)); */
+}
+.vertical-sticky aside {
+	margin: 0 auto;
+	width: 30%;
+}
+
+.vertical-sticky p {
+	margin-top: 50rem;
+}
+
+section {
+	position: relative;
+}
+
+.sticky {
+	position: sticky;
+	top: 33%;
+	/* MANDATORY PROPERTY IN MY CASE BECAUSE OF FLEX */
+	align-self: start;
+}
